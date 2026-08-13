@@ -54,7 +54,6 @@ import { ErrorPage } from "./pages/error"
 import { useCheckServerHealth } from "./utils/server-health"
 import { legacySessionServer, requireServerKey, sessionHref } from "./utils/session-route"
 import { decode64 } from "@/utils/base64"
-
 import { SessionRouteErrorBoundary, TargetSessionRouteContent } from "@/pages/session"
 import { Home } from "@/pages/home"
 
@@ -104,7 +103,6 @@ function TargetSessionRoute() {
     </SessionRouteErrorBoundary>
   )
 }
-
 // Wraps the non-draft routes. They are gated on (and keyed to) the globally selected
 // server via ServerKey, then provide the server-scoped shell for that server.
 function SelectedServerProviders(props: ParentProps) {
